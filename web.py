@@ -2,13 +2,13 @@ import tornado.ioloop
 import tornado.web
 import os
 
-class MainHandler(tornado.web.RequestHandler):
+class IndexHandler(tornado.web.RequestHandler):
     def get(self):
-        self.write("Luke Hanley lives at 65 Bromfield Rd Somerville MA 02144.")
+        self.render("views/index.html")
 
 def initializeApplication():
     return tornado.web.Application([
-        (r"/", MainHandler)
+        (r"/", IndexHandler)
     ])
 
 if __name__ == "__main__":
