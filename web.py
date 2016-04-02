@@ -62,7 +62,7 @@ class PixelateHandler(ImageHandler):
 
     def pixelate(self, img):
         width, height = img.size
-        STEP_SIZE = 4
+        STEP_SIZE = 10
         
         for row in range(0, width, STEP_SIZE):
             for col in range(0, height, STEP_SIZE):
