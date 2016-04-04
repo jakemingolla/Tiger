@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>pixl</title>
+  </head>
+
+  <body>
+    <h1>pixl.</h1>
+    <form enctype="multipart/form-data" action ="/pixelate" method="post">
+        <p> File: <input type="file" name="file"> </p>
+        <br />
+        <p> Pixelation Level: 0 <input type="range" name="blocksize" id="blocksize" value="blocksize" min="1" max="50"> 50</p>
+        <br />
+        <input type="submit" value="pixelate">
+    </form>
+  </body>
+</html>

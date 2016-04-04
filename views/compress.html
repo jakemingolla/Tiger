@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>pixl</title>
+  </head>
+
+  <body>
+    <h1>pixl.</h1>
+    <form enctype="multipart/form-data" action ="/compress" method="post">
+        <p> File: <input type="file" name="file"> </p>
+        <br />
+        <p> Contrast: 0 <input type="range" name="contrast" id="contrast" value="0" min="1" max="10" step="0.1"> 10</p>
+        <p> Sharpness: 0 <input type="range" name="sharpness" id="sharpness" value="0" min="1" max="50" step="0.1"> 50</p>
+        <p> Channels: 1 <input type="range" name="channels" id="channels" value="8" min="1" max="8" step="1"> 8</p>
+        <p> Inversion Probability: 0 <input type="range" name="probability" id="probability" value="0" min="0" max="1" step="0.01"> 1</p>
+        <p> Inversion Threshold: 0 <input type="range" name="threshold" id="threshold" value="255" min="0" max="255" step="1"> 255</p>
+
+        <br />
+        <input type="submit" value="compress">
+    </form>
+  </body>
+</html>

@@ -4,27 +4,18 @@
     <title>pixl</title>
   </head>
 
-  <script>
-  function pixelate_btn() {
-      document.myform.action = "/pixelate";
-      document.myform.submit();
-      return true;
-  }
-
-  function compression_btn() {
-      document.myform.action = "/compress";
-      document.myform.submit();
-      return true;
-  }
-  </script>
-  
   <body>
     <h1>pixl.</h1>
-    <form enctype="multipart/form-data" name="myform" method="post">
-      File: <input type="file" name="file" />
-      <br />
-      <input type="submit" value="pixelate" onclick="return pixelate_btn();">
-      <input type="submit" value="compress" onclick="return compression_btn();">
+
+    <form action="/pixelate">
+        <input type="submit" value="pixelate">
     </form>
+
+    <br />
+
+    <form action="/compress">
+        <input type="submit" value="compress">
+    </form>
+    
   </body>
 </html>
